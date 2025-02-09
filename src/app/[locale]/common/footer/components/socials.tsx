@@ -40,11 +40,11 @@ export default function Socials() {
   ]
 
   return (
-    <div className="!z-10 mb-3 flex w-fit flex-wrap gap-2">
+    <div className="!z-10 mb-3 flex w-fit flex-wrap gap-2 border-b pb-2 border-[#CD5C08]">
       {links.map((link, idx) => (
         <div
           className={cn(
-            'flex h-8 w-8 cursor-pointer items-center justify-center rounded-full transition-all duration-300 hover:bg-blue-900',
+            'flex h-10 w-10 cursor-pointer items-center justify-center rounded-full transition-all duration-300 hover:bg-blue-900',
             link.hoverClasses
           )}
           key={idx}

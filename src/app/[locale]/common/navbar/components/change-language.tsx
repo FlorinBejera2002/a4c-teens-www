@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { usePathname, useRouter } from 'next/navigation'
 
-type Language = 'en' | 'ro'
+type Language = 'en' | 'en'
 
 export default function ChangeLanguage({
   customClassname
@@ -66,12 +66,12 @@ export default function ChangeLanguage({
           language === 'en' ? 'text-white' : 'text-black'
         )}
       >
-        {t('language.ro')}
+        {t('language.en')}
       </motion.div>
       <motion.div
         className={cn(
           'z-2 absolute right-[12px] mr-[1px] text-sm font-semibold',
-          language === 'ro' ? 'text-white' : 'text-black'
+          language === 'en' ? 'text-white' : 'text-black'
         )}
       >
         {t('language.en')}

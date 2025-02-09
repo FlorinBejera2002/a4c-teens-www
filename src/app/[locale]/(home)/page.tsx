@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
-import { QuestionList } from './components/question-list'
+import { HeroText } from './components/hero-text'
 import Socials from '../common/footer/components/socials'
-import About from './components/about/page'
-import Vision from './components/vision/page'
+import About from './components/about'
+import Vision from './components/vision'
 import Projects from './components/projects/page'
 import DailyVerse from './components/verse/page'
 
@@ -39,13 +39,13 @@ export default function Home() {
             backgroundImage: 'url(/background-image.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            backgroundColor: 'rgba(0, 0, 0, 0.3)',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
             backgroundBlendMode: 'overlay'
           }}
         >
           <div className="p-6 rounded-lg flex flex-col md:flex-row w-full md:px-52 items-center">
             <div className="w-full flex flex-col gap-5">
-              <QuestionList />
+              <HeroText />
               <Socials />
             </div>
             <div className="flex max-w-96 flex-col items-center justify-center ">
@@ -54,9 +54,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <About />
-      <Vision />
-      <Projects />
+      <div className="flex flex-col items-center justify-center gap-20">
+        <About />
+        <Vision />
+        <Projects />
+      </div>
     </div>
   )
 }
