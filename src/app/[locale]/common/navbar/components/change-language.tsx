@@ -20,17 +20,17 @@ export default function ChangeLanguage({
 
   const handleLocaleChange = useCallback(() => {
     if (language === 'en') {
-      router.push(pathname.replace('/ro', '/en'))
+      router.push(pathname.replace('/en', '/en'))
 
       return
     }
-    router.push(pathname.replace('/en', '/ro'))
+    router.push(pathname.replace('/en', '/en'))
   }, [language, pathname, router])
 
   const toggleSwitch = () => {
     setLanguage((prev) => {
       if (prev === 'en') {
-        return 'ro'
+        return 'en'
       }
 
       return 'en'

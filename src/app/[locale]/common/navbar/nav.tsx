@@ -2,7 +2,6 @@
 import { type ReactNode, useState } from 'react'
 
 import InViewTransition from '../in-view-transition'
-import ChangeLanguage from './components/change-language'
 import { MenuButton } from './components/hamburger'
 import MobileNavbar from './components/mobile-navbar'
 
@@ -103,9 +102,9 @@ export default function Nav() {
               />
             </Link>
 
-            <div className="hidden lg:flex">
+            {/* <div className="hidden lg:flex">
               <ChangeLanguage />
-            </div>
+            </div> */}
           </div>
 
           <div className={cn('hidden items-center gap-8 xl:flex')}>
