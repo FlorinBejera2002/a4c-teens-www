@@ -17,12 +17,12 @@ const Vision = () => {
       <section className="bg-gray-50 py-12 bg-transparent">
         <div className="mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-center">
           <InViewTransition delay={0.25}>
-            <div className="relative flex justify-center max-w-xl center shadow-lg -mr-16 -mt-40 z-10 bg-gray-50">
+            <div className="relative flex justify-center max-w-2xl center shadow-lg md:-mr-16 md:-mt-40 z-10 bg-gray-50">
               <Image
                 src={VisionIlustration}
                 alt={t('vision_hero.section_title')}
-                width={500}
-                height={400}
+                width={800}
+                height={800}
               />
             </div>
           </InViewTransition>

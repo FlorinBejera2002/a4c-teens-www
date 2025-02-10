@@ -18,7 +18,7 @@ const config: Config = {
         'outline-red': '0 0 10px 5px rgba(255, 0, 0, 0.5)'
       },
       colors: {
-        accent: '#982B1C'
+        accent: '#7d450a'
       }
     }
   }

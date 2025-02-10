@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import AboutUsImage from '../../../../../public/about.png'
+import AboutUsImage from '../../../../../public/About us page-bro.svg'
 import InViewTransition from '@/app/[locale]/common/in-view-transition'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -41,13 +41,13 @@ const About = () => {
         </div>
 
         <InViewTransition delay={0.25}>
-          <div className="relative flex justify-center shadow-lg -ml-16 -mb-40 z-10 bg-gray-50">
+          <div className="relative flex justify-center shadow-lg max-w-2xl -ml-16 -mb-40 z-10 bg-gray-50">
             <div className="relative">
               <Image
                 src={AboutUsImage}
                 alt={t('section_title')}
-                width={500}
-                height={400}
+                width={700}
+                height={500}
               />
             </div>
           </div>

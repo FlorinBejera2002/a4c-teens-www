@@ -22,14 +22,14 @@ export default function Projects() {
   const t = useTranslations()
 
   return (
-    <section className="bg-white py-12" id="projects">
+    <section className="bg-white pb-12" id="projects">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-start mb-5">
           <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
             {t('projects.section_title')}
           </h3>
           <h2 className="text-4xl font-bold text-gray-900 mt-2">
-            t{t('projects.heading')}{' '}
+            {t('projects.heading')}{' '}
             <span className="text-accent">{t('projects.highlight')}</span>
           </h2>
         </div>
@@ -37,7 +37,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {projectsData.map((project, index) => (
             <InViewTransition key={index} delay={0.5 + index * 0.25}>
-              <div className="bg-blue-50 p-4 rounded-lg h-64 shadow-md flex flex-col items-center text-center">
+              <div className="bg-[#fb8a5d] p-4 rounded-lg h-64 shadow-md flex flex-col items-center text-center">
                 <Image
                   src={project.image}
                   alt={t(`${project.translationKey}.title`)}
