@@ -41,17 +41,17 @@ export default function DailyVerse({
 
   return (
     <Link href={`/${language}/devotional`} className="text-decoration-none">
-      <div className="bg-opacity-30 p-5 shadow-xl bg-accent rounded-md text-gray-200 text-center ">
+      <div className="bg-opacity-30 p-5 shadow-xl bg-accent rounded-md text-gray-200 text-center">
         <div className="flex flex-col items-center p-3  xl:gap-4 ">
           <InViewTransition
             delay={0.25}
             customClassname="flex justify-center items-center"
           >
             <div className="text-left flex flex-col w-full">
-              <p className="text-md pb-0 font-semibold italic md:pb-1 md:text-lg">
+              <p className="text-xs pb-0 font-semibold italic md:pb-1 md:text-lg">
                 "{devotional.verse.text}"
               </p>
-              <span className="text-gray-300 flex justify-end">
+              <span className="text-gray-300 flex justify-end text-xs md:text-sm">
                 "{devotional.verse.reference}"
               </span>
             </div>

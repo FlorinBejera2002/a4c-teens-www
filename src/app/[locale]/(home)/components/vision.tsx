@@ -14,10 +14,10 @@ const Vision = () => {
 
   return (
     <>
-      <section className="bg-gray-50 py-12 bg-transparent">
+      <section className="bg-gray-50 md:py-12 bg-transparent">
         <div className="mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-center">
           <InViewTransition delay={0.25}>
-            <div className="relative flex justify-center max-w-2xl center shadow-lg md:-mr-16 md:-mt-40 z-10 bg-gray-50">
+            <div className="relative hidden justify-center max-w-2xl center shadow-lg md:-mr-16 md:-mt-40 z-10 bg-gray-50 md:flex">
               <Image
                 src={VisionIlustration}
                 alt={t('vision_hero.section_title')}
@@ -27,7 +27,7 @@ const Vision = () => {
             </div>
           </InViewTransition>
 
-          <div className="flex flex-col gap-5 shadow-lg p-20 rounded-md max-w-4xl bg-gray-200 z-10">
+          <div className="flex flex-col gap-5 md:shadow-lg md:p-20 rounded-md max-w-4xl md:bg-gray-200 z-10">
             <InViewTransition delay={0}>
               <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">
                 {t('vision_hero.section_title')}

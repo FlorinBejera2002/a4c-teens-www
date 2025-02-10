@@ -15,7 +15,7 @@ const About = () => {
   return (
     <section className="bg-white" id="/">
       <div className="mx-auto px-6 lg:p-12 flex flex-col md:flex-row items-center justify-center">
-        <div className="flex flex-col gap-3 shadow-lg p-20  rounded-md max-w-4xl bg-gray-200 z-20">
+        <div className="flex flex-col gap-3 md:shadow-lg md:p-20  rounded-md max-w-4xl md:bg-gray-200 z-20">
           <InViewTransition delay={0}>
             <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">
               {t('section_title')}
@@ -41,7 +41,7 @@ const About = () => {
         </div>
 
         <InViewTransition delay={0.25}>
-          <div className="relative flex justify-center shadow-lg max-w-2xl -ml-16 -mb-40 z-10 bg-gray-50">
+          <div className="relative flex justify-center shadow-lg max-w-2xl -ml-16 -mb-40 z-10 bg-gray-50 hidden md:block">
             <div className="relative">
               <Image
                 src={AboutUsImage}
