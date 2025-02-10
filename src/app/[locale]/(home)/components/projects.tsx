@@ -1,14 +1,14 @@
 'use client'
 
-import InViewTransition from '@/app/[locale]/common/in-view-transition'
+import InViewTransition from '../../common/in-view-transition'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
-import Project1 from '../../../../../../public/project1.svg'
-import Project2 from '../../../../../../public/project2.svg'
-import Project3 from '../../../../../../public/project3.svg'
-import Project4 from '../../../../../../public/project4.svg'
-import Project5 from '../../../../../../public/project5.svg'
+import Project1 from '../../../../../public/project1.svg'
+import Project2 from '../../../../../public/project2.svg'
+import Project3 from '../../../../../public/project3.svg'
+import Project4 from '../../../../../public/project4.svg'
+import Project5 from '../../../../../public/project5.svg'
 
 const projectsData = [
   { image: Project1, translationKey: 'projects.items.0' },
@@ -22,32 +22,33 @@ export default function Projects() {
   const t = useTranslations()
 
   return (
-    <section className="bg-white" id="projects">
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="text-start mb-5">
+    <section className="py-16 sm:py-24 bg-gray-50" id="projects">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
           <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
             {t('projects.section_title')}
           </h3>
-          <h2 className="text-4xl font-bold text-gray-900 mt-2">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
             {t('projects.heading')}{' '}
             <span className="text-accent">{t('projects.highlight')}</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {projectsData.map((project, index) => (
-            <InViewTransition key={index} delay={0.5 + index * 0.25}>
-              <div className="bg-gray-100 p-4 rounded-lg md:h-80 shadow-md flex flex-col items-center text-center">
+            <InViewTransition key={index} delay={0.2 * index}>
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl md:min-h-72 transition duration-300 flex flex-col items-center text-center">
                 <Image
-                  src={project.image}
+                  src={project.image || '/placeholder.svg'}
                   alt={t(`${project.translationKey}.title`)}
-                  width={100}
-                  height={100}
+                  width={80}
+                  height={80}
+                  className="mb-4"
                 />
-                <h4 className="text-lg font-semibold text-gray-900 mt-3">
+                <h4 className="text-xl font-semibold text-gray-900 mb-2">
                   {t(`${project.translationKey}.title`)}
                 </h4>
-                <p className="text-gray-600 mt-2 text-sm">
+                <p className="text-gray-600 text-sm">
                   {t(`${project.translationKey}.description`)}
                 </p>
               </div>

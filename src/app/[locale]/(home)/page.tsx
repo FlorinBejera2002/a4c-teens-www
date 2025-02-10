@@ -4,8 +4,8 @@ import { HeroText } from './components/hero-text'
 import Socials from '../common/footer/components/socials'
 import About from './components/about'
 import Vision from './components/vision'
-import Projects from './components/projects/page'
 import DailyVerse from './components/verse/page'
+import Projects from './components/projects'
 
 export async function generateMetadata({
   params: { locale }
