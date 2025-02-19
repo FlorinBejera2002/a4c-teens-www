@@ -13,7 +13,7 @@ const Vision = () => {
   const t = useTranslations('vision_hero')
 
   return (
-    <section className="py-16 sm:py-24 bg-white" id="vision">
+    <section className="py-8 md:py-12 bg-white" id="vision">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-12">
           <div className="lg:w-1/2 space-y-6">

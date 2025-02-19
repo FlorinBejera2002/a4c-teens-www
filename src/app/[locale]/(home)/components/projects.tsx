@@ -22,7 +22,7 @@ export default function Projects() {
   const t = useTranslations()
 
   return (
-    <section className="py-16 sm:py-24 bg-gray-50" id="projects">
+    <section className="py-8 md:py-12 bg-gray-50" id="projects">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">

@@ -44,7 +44,7 @@ export default function Socials() {
       {links.map((link, idx) => (
         <div
           className={cn(
-            'flex h-10 w-10 cursor-pointer items-center justify-center rounded-full transition-all duration-300 hover:bg-blue-900',
+            'flex h-8 w-8 md:h-10 md:w-10 cursor-pointer items-center justify-center rounded-full transition-all duration-300 hover:bg-blue-900',
             link.hoverClasses
           )}
           key={idx}

@@ -43,7 +43,7 @@ export default function Home() {
             backgroundBlendMode: 'overlay'
           }}
         >
-          <div className="p-6 flex flex-col w-full md:px-52 md:gap-20 justify-center h-full mt-16 md:mt-40">
+          <div className="p-6 flex flex-col w-full md:px-52 md:gap-20 justify-center h-full mt-40">
             <div className="w-full flex flex-col md:gap-5">
               <HeroText />
               <Socials />
@@ -54,11 +54,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="flex flex-col items-center justify-center gap-8 md:gap-20 md:py-12 py-8">
-        <About />
-        <Vision />
-        <Projects />
-      </div>
+      <About />
+      <Vision />
+      <Projects />
     </div>
   )
 }
